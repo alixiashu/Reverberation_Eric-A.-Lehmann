@@ -3,15 +3,7 @@ Reverberation coding in Matlab referring to work of Eric A. Lehmann
 
 ## old
 
-#### MakeIMResp.m 
 
-
- * 函数功能<br>  
-    IMRevTimeAnalysis函数的变量输入辅助函数<br>
- * example<br>
- IMRevTimeAnalysis('IMSetup','PlotRes',1)//设置PlotRes = 1（显示图像）
-    
-    
 #### <font color=#00ffff>MakeIMResp.m </font>
 
 
@@ -46,6 +38,17 @@ Reverberation coding in Matlab referring to work of Eric A. Lehmann
       end<br>
     * Check_lDim(...)改变m,调用Check_nDim(...)<br>
      * Check_nDim(...)改变n,计算h；并验证是否大于预设的停止计算时间（与混响时间成比例关系）<br>
+    
+    
+    
+#### MakeIMResp.m 
+
+
+ * 函数功能
+    IMRevTimeAnalysis函数的变量输入辅助函数<br>
+ * example<br>
+ IMRevTimeAnalysis('IMSetup','PlotRes',1)//设置PlotRes = 1（显示图像）
+    
     
     
     
