@@ -25,5 +25,18 @@ Reverberation coding in Matlab referring to work of Eric A. Lehmann
      <br>
      &nbsp;<img src="https://latex.codecogs.com/gif.latex?\beta" /> : 房间墙壁反射系数<br>
      
+
  * 思路总结<br> 
-    计算对应房间参数的冲击响应及其频域形式<br>
+    * 根据Sabine公式估算混响时间；<br>
+    * for a=0:1<br>
+       &nbsp;&nbsp;for b=0:1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;for c = 0:1<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;改变l,调用Check_lDim(...)<br>
+        &nbsp;&nbsp; &nbsp;&nbsp;end<br>
+       &nbsp;&nbsp;end<br>
+      end<br>
+    * Check_lDim(...)改变m,调用Check_nDim(...)<br>
+     * Check_nDim(...)改变n,计算h；并验证是否大于预设的停止计算时间（与混响时间成比例关系）<br>
+    
+    
+    
