@@ -7,6 +7,15 @@ Reverberation coding in Matlab referring to work of Eric A. Lehmann
 
 
  * 函数功能<br>  
+    IMRevTimeAnalysis函数的变量输入辅助函数<br>
+ * example<br>
+ IMRevTimeAnalysis('IMSetup','PlotRes',1)//设置PlotRes = 1（显示图像）
+    
+    
+#### <font color=#00ffff>MakeIMResp.m </font>
+
+
+ * 函数功能<br>  
     计算对应房间参数的冲击响应及其频域形式<br>
  * 核心公式<br>  
      <img src="https://latex.codecogs.com/gif.latex?h(t)&space;=&space;\sum_{u=0}^{1}\sum_{l=-\infty}^{\infty}A(u,l)\delta&space;(t&space;-&space;\tau(u,l)))"> <br>
